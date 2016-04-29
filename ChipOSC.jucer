@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="zdMYno" name="ChipOSC" projectType="consoleapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.ChipOSC" includeBinaryInAppConfig="1"
+              jucerVersion="4.2.1">
+  <MAINGROUP id="GqfPtJ" name="ChipOSC">
+    <GROUP id="{B4F816F5-FBC1-8710-D28C-58749F01B360}" name="Source">
+      <FILE id="ZYgrcI" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="ChipOSC"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="ChipOSC"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../ts/didl/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../ts/didl/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../ts/didl/JUCE/modules"/>
+        <MODULEPATH id="juce_osc" path="../../../ts/didl/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
+                       targetName="ChipOSC"/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="3"
+                       targetName="ChipOSC"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../ts/didl/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../ts/didl/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../ts/didl/JUCE/modules"/>
+        <MODULEPATH id="juce_osc" path="../../../ts/didl/JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_osc" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
